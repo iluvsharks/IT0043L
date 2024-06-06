@@ -5,6 +5,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.5s all ease;
 }
+body{
+    background-image: url(https://i.pinimg.com/originals/0d/41/02/0d4102657d746a79da70fc1fd21cf1ce.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 .Bluelock-container {
     width: 80vw;
@@ -21,7 +26,7 @@ img {
 }
 
 .item {
-    border: 2px solid blue;
+    border: 6px solid blue;
     border-radius: 30px;
     padding: 10px;
     display: flex;
@@ -29,29 +34,36 @@ img {
     align-items: center;
     /*justify-content: space-between;*/
     gap: 10px;
+    
 }
 
 .details {
     text-align: center;
 }
 
-.position {
+.Position {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 900;
+    color: rgb(81, 11, 211);
+   
+    
 }
 
 .name {
     font-size: 2rem;
     font-weight: 700;
+    color: rgb(206, 203, 203);
 }
 
 .alias {
     font-size: 1.5rem;
+    color: aliceblue;
 }
 
 .desc {
     text-align: justify;
     line-height: 1.5;
+    color: aliceblue;
 
 
 }
@@ -63,7 +75,7 @@ img {
 }
 
 #nagi {
-    background-color: aliceblue;
+    background-color: rgb(48, 57, 65);
 }
 
 #chigiri {
@@ -140,3 +152,9 @@ img {
     }
 
 }
+.item:hover{
+    background-image: url(https://i.pinimg.com/originals/1f/d5/f5/1fd5f53f521131895dace2c72ff5f086.gif);
+    background-size: cover;
+    background-position: center;
+}
+
