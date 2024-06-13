@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s all ease;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: black;
+    height: fit-content;
+    padding: 10px;
+    color: white;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.Logo{
+    height:100px;
+    width: 100px ;
+    position: ;
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+
+nav a{
+    color: rgb(5, 141, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    background-image: url(https://i.makeagif.com/media/5-07-2021/pe2kMh.gif);
+    background-size: cover;
+    background-position: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: rgb(0, 217, 255);
+}
+
+.Logo:hover{
+    background-image: url(https://i.makeagif.com/media/5-07-2021/pe2kMh.gif);
+    background-size: cover;
+}
+
+.main-pic{
+    
+    
+
+}
