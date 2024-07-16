@@ -1,89 +1,196 @@
-{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: o;
+    transition: 0.5s all ease;
+}
+
+body {
+    background-color: rgba(95, 95, 65, 0.637);
 
 }
 
-body{
-    background-size: cover;
-    background-position: center;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c1cfff2-db8d-44cd-8a13-cb2a4162fae6/dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjMWNmZmYyLWRiOGQtNDRjZC04YTEzLWNiMmE0MTYyZmFlNlwvZGQyem91by0wNDdmN2IzZi1iODk1LTQzYWMtODJhNC1hYmI2Y2ExMmM1MmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EFI6YQ0acRLpYHzupMAxV_N4KMcpNWT-_3RJ4TV-4eU");
+nav {
+    background-image: url(bg.jpg);
+    height: fit-content;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-bottom: 7px solid rgb(12, 3, 95);
+    position: sticky;
+    z-index: 1000;
 }
 
-.flex-container {
-    height: 400px;
-    width: 80vw;
-    margin: 20px auto;
+.intro {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0cap rgb(0, 0, 0), 0 5px rgb(0, 3, 165), 5px 0 black, 1px 0cap rgb(0, 0, 0);
+    font-family: Garamond, serif;
+}
+
+nav a {
+    color: rgb(51, 78, 231);
+    font-family: 'Rapier Zero';
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 45px rgb(0, 204, 255), 0 0 60px rgb(0, 68, 255);
+}
+
+nav li {
+    list-style: none;
+    margin-right: 90px;
+}
+
+nav .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.box {
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    border: 2px black solid;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 3rem;
-    padding: 1px;
+nav ul {
+    display: flex;
+
 }
 
-#box1 {
-    background-color: antiquewhite;
+.logo {
+    color: rgb(243, 243, 243);
+    font-size: 2.5rem;
+    font-family: 'Rapier Zero';
+    font-weight: 700;
+    margin: 15px;
+    margin-left: 5rem;
+    text-shadow: 5px 0 black, 0 5px black, 5px 0 black, 0 7px black;
 }
 
-#box2{
-    background-color: aquamarine;
+.logo:hover {
+    text-shadow: 0px 0px 10px rgb(0, 0, 0), 0 0 65px rgb(68, 68, 68), 0 0 60px rgb(41, 39, 39);
 }
 
-#box3{
-   background-color: antiquewhite;
+.pic1 img {
+    width: 455px;
+    margin-left: 43.5rem;
+    margin-top: 2rem;
+    border: 7px solid rgb(0, 204, 255);
+    border-radius: 20px;
+    animation: mymove 5s infinite;
 }
 
-#box4{
-    background-color:;
- }
- 
-#box5{
-    background-color: orange ;
- }
- 
-#box6{
-    background-color:yellow;
- }
- 
-#box7{
-    background-color: pink;
- }
+.pic1 img:hover {
+    box-shadow: 0px 0px 95px rgba(14, 0, 145, 0.904);
 
- 
-#box8{
-    background-color: antiquewhite;
- }
- 
-#box9{
-    background-color: violet;
- }
- 
-#box10{
-    background-color: orange;
- }
- 
-#box11{
-    background-color:blue;
- }
- 
-#box12{
-    background-color: green;
- }
+}
 
- .box:hover{
-    background-image: url("images.jpg");
-   background-position: center;
-   background-size: cover;
- }
+@keyframes mymove {
+    60% {
+        border-color: rgba(14, 0, 145, 0.904),
+    }
+}
+
+.Home-container {
+    display: flex;
+    height: 200px;
+    gap: 85rem;
+    margin-left: 3rem;
+}
+
+.intro {
+    line-height: 1.8;
+    margin-top: 3rem;
+    margin-left: 23rem;
+}
+
+.h1 {
+    font-size: 45px;
+    margin-left: 22rem;
+    font-family: 'Megaton';
+}
+
+.h2 {
+    font-size: 55px;
+    font-family: 'Megaton';
+}
+
+.h3 {
+    font-size: 35px;
+    margin-left: 3.5rem;
+    font-family: 'Megaton';
+}
+
+.about {
+    font-size: 5.5rem;
+    margin-top: 100;
+    color: white;
+    font-weight: 600;
+    min-height: 80vh;
+    padding: 5rem 9% 2rem;
+    background-color: rgb(72, 160, 160);
+    font-family: 'Megaton';
+    text-shadow: 1px 0cap rgb(0, 0, 0), 0 5px rgb(0, 3, 165), 5px 0 black, 1px 0cap rgb(0, 0, 0);
+
+}
+
+.about1 span {
+    font-family: 'Megaton';
+    color: aqua;
+    text-shadow: 0px 0px 50px white, 0px 0px 50px white;
+    font-size: 6.5rem;
+}
+
+
+.about h1 {
+    margin-top: 0rem;
+    font-family: 'Megaton';
+}
+
+.about1 {
+    font-size: 3.5rem;
+}
+
+.about2 {
+    font-size: 5rem;
+
+}
+
+.about3 span {
+    color: rgb(23, 138, 23);
+    text-shadow: 0px 0px 35px yellow;
+    font-family: 'Megaton';
+    font-size: 5rem;
+}
+
+.Projintro {
+    display: flex;
+    margin-top: -15rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 9% 2rem;
+    min-height: 60vh;
+    
+   
+}
+.proj1{
+    border-radius:0px;
+    font-size: 4rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+
+}
+
+.Projects{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11rem;
+    padding: 80px 90px;
+    text-decoration: none;
+
+
+}
+.imgproj{
+    height: 70px;
+   margin-left: -3rem;
+}
