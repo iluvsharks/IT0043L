@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: o;
     transition: 0.5s all ease;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,28 +12,37 @@ body {
 
 }
 
+
 nav {
     background-image: url(bg.jpg);
-    height: fit-content;
     padding: 25px;
     margin-bottom: 18px;
     border-bottom: 7px solid rgb(12, 3, 95);
     position: sticky;
     z-index: 1000;
 }
+nav a :active{
+    color: black;
+}
+
+.home{
+    min-height:100vh;
+}
 
 .intro {
     color: rgb(255, 255, 255);
     text-shadow: 1px 0cap rgb(0, 0, 0), 0 5px rgb(0, 3, 165), 5px 0 black, 1px 0cap rgb(0, 0, 0);
     font-family: Garamond, serif;
+
 }
 
 nav a {
     color: rgb(51, 78, 231);
     font-family: 'Rapier Zero';
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    
 }
 
 nav a:hover {
@@ -41,7 +51,7 @@ nav a:hover {
 
 nav li {
     list-style: none;
-    margin-right: 90px;
+    margin-right: 35px;
 }
 
 nav .container {
@@ -53,7 +63,7 @@ nav .container {
 
 nav ul {
     display: flex;
-
+   
 }
 
 .logo {
@@ -72,11 +82,13 @@ nav ul {
 
 .pic1 img {
     width: 455px;
-    margin-left: 43.5rem;
+    margin-left: 41.5rem;
     margin-top: 2rem;
     border: 7px solid rgb(0, 204, 255);
     border-radius: 20px;
     animation: mymove 5s infinite;
+    justify-content: center;
+    align-items: center;
 }
 
 .pic1 img:hover {
@@ -93,43 +105,37 @@ nav ul {
 .Home-container {
     display: flex;
     height: 200px;
-    gap: 85rem;
-    margin-left: 3rem;
+    gap: 82rem;
+    margin-left: 2rem;
 }
 
 .intro {
     line-height: 1.8;
     margin-top: 3rem;
-    margin-left: 23rem;
-}
 
-.h1 {
-    font-size: 45px;
-    margin-left: 22rem;
-    font-family: 'Megaton';
+    
 }
-
-.h2 {
-    font-size: 55px;
-    font-family: 'Megaton';
-}
-
-.h3 {
+.intro h1{
     font-size: 35px;
-    margin-left: 3.5rem;
-    font-family: 'Megaton';
+    
+   text-align: center;
+
 }
+
+
 
 .about {
     font-size: 5.5rem;
-    margin-top: 100;
+    margin-top: 50;
     color: white;
     font-weight: 600;
-    min-height: 80vh;
+    min-height: 50vh;
     padding: 5rem 9% 2rem;
     background-color: rgb(72, 160, 160);
     font-family: 'Megaton';
     text-shadow: 1px 0cap rgb(0, 0, 0), 0 5px rgb(0, 3, 165), 5px 0 black, 1px 0cap rgb(0, 0, 0);
+    line-height: 5rem;
+    margin-left: -3rem;
 
 }
 
@@ -137,21 +143,29 @@ nav ul {
     font-family: 'Megaton';
     color: aqua;
     text-shadow: 0px 0px 50px white, 0px 0px 50px white;
-    font-size: 6.5rem;
+    font-size: 7rem;
 }
 
 
 .about h1 {
-    margin-top: 0rem;
+    
     font-family: 'Megaton';
 }
 
-.about1 {
-    font-size: 3.5rem;
+.about1 h1{
+    font-size: 6rem;
+    margin-top: -5rem;
 }
 
 .about2 {
-    font-size: 5rem;
+    font-size: 2rem;
+}
+.about3{
+    font-size: 2rem;
+}
+.about p{
+    font-size: 2rem ;
+    word-spacing: 1rem;
 
 }
 
@@ -160,6 +174,7 @@ nav ul {
     text-shadow: 0px 0px 35px yellow;
     font-family: 'Megaton';
     font-size: 5rem;
+    margin-left: 1rem;
 }
 
 .Projintro {
@@ -168,29 +183,289 @@ nav ul {
     justify-content: center;
     align-items: center;
     padding: 5rem 9% 2rem;
-    min-height: 60vh;
-    
-   
+    min-height: 100vh;
+
+
 }
-.proj1{
-    border-radius:0px;
+
+.proj1 {
+    border-radius: 0px;
     font-size: 4rem;
     justify-content: center;
-    margin-top: 2.5rem;
-
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    align-items: center;
 }
 
-.Projects{
+.Projimg img {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: 11rem;
-    padding: 80px 90px;
-    text-decoration: none;
-
-
+    margin-left: 10rem;
+    animation: floatImage 4s ease-in-out infinite;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: -4rem;
+   
 }
-.imgproj{
+.Projimg img:hover {
+    transform: scale(1.2)translateY(-10px);
+}
+
+
+
+.imgproj {
     height: 70px;
-   margin-left: -3rem;
+    margin-left: -9.5rem;
 }
+
+.faq {
+    font-size: 5.5rem;
+    margin-top: 100;
+    color: white;
+    font-weight: 600;
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+    background-color: rgb(72, 160, 160);
+    align-items: center;
+}
+
+.faqmain {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.faqmain .heading{
+    margin-top:-5rem;
+    margin-bottom: 3rem;
+}
+
+.faQ {
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.faq1 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.frequently{
+    min-height: 450px;
+    max-width: 450px;
+    background: white;
+    border: .3rem solid white;
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.frequently h2{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.frequently p{
+    font-size: 1.8rem;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+}
+section {
+    min-height: 95vh;
+    padding: 10rem 9% -1rem;
+}
+
+.contact{
+    min-height:70vh;
+    margin-top: 3rem;
+}
+
+.input-box input {
+    width: 20%;
+    margin: 0.7rem 0.35rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background:black;
+    border-radius: 0.8rem;
+    border: 0.25rem white;
+    margin: 0.7rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color:  rgb(72, 160, 160) 
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-color);
+}   
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3%;
+    }
+    .Projects{
+        padding: 7rem
+    }
+    
+    .FAQ{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input-box input {
+        width: 50%;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media (max-width:786px) {
+    
+
+    .nav ul {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--main-color);
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav a {
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+
+    .Home{
+        flex-direction: column;
+    }
+    .intro h1{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .intro{
+        order: 2;
+        margin-left: 1rem;
+    }
+    .pic1 img{
+        width: 70vw;
+        margin-top: 4rem;
+       margin-left: 8rem;
+    }
+    .About{
+        flex-direction: column-reverse;
+    }
+
+    .Home-container img{
+       gap:-200rem;
+       width:150px;
+       height:100px;
+    }
+    .Projimg img{
+        width: 300px;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 18rem;
+      height: 100px;
+    }
+    .Projintro h1{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:617px) {
+    .pic1 img{
+        width: 70vw;
+        margin-top: 8rem;
+    }
+    .pic1 img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
