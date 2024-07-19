@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgba(95, 95, 65, 0.637);
+    background-color: rgb(32, 32, 37);
 
 }
 
@@ -67,6 +67,7 @@ nav ul {
 }
 
 .logo {
+    letter-spacing: 0.5rem;
     color: rgb(243, 243, 243);
     font-size: 2.5rem;
     font-family: 'Rapier Zero';
@@ -83,12 +84,12 @@ nav ul {
 .pic1 img {
     width: 455px;
     margin-left: 41.5rem;
-    margin-top: 2rem;
+    margin-top: -2rem;
     border: 7px solid rgb(0, 204, 255);
     border-radius: 20px;
     animation: mymove 5s infinite;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 .pic1 img:hover {
@@ -105,21 +106,27 @@ nav ul {
 .Home-container {
     display: flex;
     height: 200px;
-    gap: 82rem;
+    gap: 87rem;
     margin-left: 2rem;
 }
 
 .intro {
-    line-height: 1.8;
+    line-height: 2;
     margin-top: 3rem;
-
+    text-align: center;
+    margin-top: -0.5rem;
+   
     
 }
 .intro h1{
-    font-size: 35px;
-    
+    font-size: 5rem;
    text-align: center;
 
+}
+.h1 span{
+    font-family: 'Megaton';
+    color: aqua;
+    text-shadow: 0px 0px 50px white, 0px 0px 50px white;
 }
 
 
@@ -131,7 +138,7 @@ nav ul {
     font-weight: 600;
     min-height: 50vh;
     padding: 5rem 9% 2rem;
-    background-color: rgb(72, 160, 160);
+    background-color: rgb(30, 71, 71);
     font-family: 'Megaton';
     text-shadow: 1px 0cap rgb(0, 0, 0), 0 5px rgb(0, 3, 165), 5px 0 black, 1px 0cap rgb(0, 0, 0);
     line-height: 5rem;
@@ -182,52 +189,62 @@ nav ul {
     margin-top: -15rem;
     justify-content: center;
     align-items: center;
-    padding: 5rem 9% 2rem;
+    padding: 10rem;
     min-height: 100vh;
 
 
 }
 
 .proj1 {
+    font-family: 'Rapier Zero';
     border-radius: 0px;
     font-size: 4rem;
     justify-content: center;
     margin-top: 10rem;
     margin-bottom: 8rem;
     align-items: center;
+    color: aqua;
+    text-shadow: 0px 0px 50px white, 0px 0px 50px white;
+    letter-spacing: 1rem;
+    
 }
 
 .Projimg img {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: 10rem;
+    margin-left: 13rem;
     animation: floatImage 4s ease-in-out infinite;
     cursor: pointer;
     transition: 0.4s ease-in-out;
     margin-top: -4rem;
-   
+    border: 7px solid rgb(0, 204, 255);;
 }
 .Projimg img:hover {
     transform: scale(1.2)translateY(-10px);
+    background-image: url(https://i.pinimg.com/originals/1f/d5/f5/1fd5f53f521131895dace2c72ff5f086.gif);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 15px 95px rgba(14, 0, 145, 0.904);
 }
 
 
 
 .imgproj {
     height: 70px;
-    margin-left: -9.5rem;
 }
 
 .faq {
     font-size: 5.5rem;
     margin-top: 100;
-    color: white;
+    color: aqua;
     font-weight: 600;
     min-height: 100vh;
-    padding: 5rem 9% 2rem;
-    background-color: rgb(72, 160, 160);
+    padding:10rem;
+    background-color:  rgb(30, 71, 71);
     align-items: center;
+    text-shadow: 0px 0px 50px white, 0px 0px 50px white;
+    
 }
 
 .faqmain {
@@ -243,6 +260,8 @@ nav ul {
 .faqmain .heading{
     margin-top:-5rem;
     margin-bottom: 3rem;
+    font-family: 'Rapier Zero';
+    letter-spacing: 1rem;
 }
 
 .faQ {
@@ -262,8 +281,8 @@ nav ul {
 .frequently{
     min-height: 450px;
     max-width: 450px;
-    background: white;
-    border: .3rem solid white;
+    background: rgb(141, 135, 135);
+    border: .3rem solid aqua;
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 20px 20px;
@@ -296,6 +315,9 @@ nav ul {
     text-align: center;
     font-size: 6rem;
     margin-bottom: 4rem;
+    color: aqua;
+    text-shadow: 0px 0px 50px white, 0px 0px 50px white;
+    letter-spacing: 1rem;
 }
 section {
     min-height: 95vh;
@@ -335,12 +357,12 @@ section {
 }
 .footer .social a{
     font-size: 25px;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
+    color:white;
+    border: px solid aqua;
     width: 42px;
     height: 42px;
     line-height: 42px;
-    display: inline-block;
+   
     text-align: center;
     border-radius: 50%;
     margin: 0 10px;
@@ -349,66 +371,52 @@ section {
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
     background-color: var(--main-color);
-    color: var(--bg-color);
-    box-shadow: 0 0 25px var(--main-color);
+    color: aqua;
+    box-shadow: 0 0 25px white;
 }
 
 .footer .copyright{
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    color: var(--text-color);
+    color:pink;
+    text-shadow: 0px 30px 50px white, 0px 0px 50px pink;
+    
 }   
+.footer .copyright:hover{
+    box-shadow:  0px 0px 50px pink;
+}
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
 
-@media (max-width:1200px) {
+@media (max-width:1600px) {
     html {
         font-size: 55%;
     }
+
+    .pic1{
+        margin-left: 4em;
+    }
+    .Feupic2{
+        margin-left: 10rem;
+        display: flex;
+    }
+  
+     nav ul{
+        padding: 10px;
+     }
+     nav a{
+        font-size: 15px;
+     }
 }
 
-@media (max-width:991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3%;
-    }
-    .Projects{
-        padding: 7rem
-    }
-    
-    .FAQ{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .input-box input {
-        width: 50%;
-    }
-    .footer{
-        padding: 2rem 3%;
-    }
-}
+
 @media (max-width:786px) {
     
-
-    .nav ul {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 255px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background: var(--main-color);
-        transition: all 0.5s ease;
-        backdrop-filter: blur(10px);
-    }
-
-    .nav a {
-        display: block;
-        padding: 17px;
-        font-size: 22px;
-    }
-
     .Home{
         flex-direction: column;
     }
@@ -423,18 +431,23 @@ section {
         margin-left: 1rem;
     }
     .pic1 img{
-        width: 70vw;
+       
         margin-top: 4rem;
-       margin-left: 8rem;
+       margin-left: 9rem;
     }
     .About{
         flex-direction: column-reverse;
     }
 
     .Home-container img{
-       gap:-200rem;
+     
        width:150px;
        height:100px;
+       display: flex;
+    }
+
+    .Feupic2{
+        margin-left: -50rem;
     }
     .Projimg img{
         width: 300px;
@@ -451,8 +464,8 @@ section {
 
 @media (max-width:617px) {
     .pic1 img{
-        width: 70vw;
-        margin-top: 8rem;
+    
+        margin-top: 10rem;
     }
     .pic1 img{
         width: 70vw;
@@ -461,11 +474,9 @@ section {
 }
 @media (max-width:450px) {
     html{
-        font-size: 50%;
-    }
+        font-size: 70%;
+
+   
 }
 
-
-
-
-
+}
