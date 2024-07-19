@@ -83,7 +83,7 @@ nav ul {
 
 .pic1 img {
     width: 455px;
-    margin-left: 50rem;
+    margin-left: 68.5rem;
     margin-top: -2rem;
     border: 7px solid rgb(0, 204, 255);
     border-radius: 20px;
@@ -106,8 +106,8 @@ nav ul {
 .Home-container {
     display: flex;
     height: 200px;
-    gap: 87rem;
-    margin-left: 2rem;
+    gap: 130rem;
+    margin-left: 8rem;
 }
 
 .intro {
@@ -211,8 +211,10 @@ nav ul {
 
 .Projimg img {
     justify-content: center;
+    width:50rem;
+    height:14rem;
     align-content: center;
-    margin-left: 13rem;
+    margin-left: 4rem;
     animation: floatImage 4s ease-in-out infinite;
     cursor: pointer;
     transition: 0.4s ease-in-out;
