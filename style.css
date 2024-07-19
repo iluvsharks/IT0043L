@@ -83,19 +83,20 @@ nav ul {
 
 .pic1 img {
     width: 455px;
-    margin-left: 43rem;
+    margin-left: 41.5em;
     margin-top: -2rem;
     border: 7px solid rgb(0, 204, 255);
     border-radius: 20px;
     animation: mymove 5s infinite;
     justify-content: center;
-    align-content: center;
+    align-content: center;  
 }
 
 .pic1 img:hover {
     box-shadow: 0px 0px 95px rgba(14, 0, 145, 0.904);
 
 }
+
 @keyframes mymove {
     60% {
         border-color: rgba(14, 0, 145, 0.904),
@@ -105,7 +106,7 @@ nav ul {
 .Home-container {
     display: flex;
     height: 200px;
-    gap: 100rem;
+    gap: 87rem;
     margin-left: 2rem;
 }
 
@@ -209,9 +210,8 @@ nav ul {
 }
 
 .Projimg img {
-    position: relative;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     margin-left: 13rem;
     animation: floatImage 4s ease-in-out infinite;
     cursor: pointer;
