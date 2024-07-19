@@ -83,7 +83,7 @@ nav ul {
 
 .pic1 img {
     width: 455px;
-    margin-left: 45rem;
+    margin-left: 50rem;
     margin-top: -2rem;
     border: 7px solid rgb(0, 204, 255);
     border-radius: 20px;
@@ -96,7 +96,6 @@ nav ul {
     box-shadow: 0px 0px 95px rgba(14, 0, 145, 0.904);
 
 }
-
 @keyframes mymove {
     60% {
         border-color: rgba(14, 0, 145, 0.904),
@@ -106,7 +105,7 @@ nav ul {
 .Home-container {
     display: flex;
     height: 200px;
-    gap: 87rem;
+    gap: 100rem;
     margin-left: 2rem;
 }
 
